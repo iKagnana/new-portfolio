@@ -1,6 +1,82 @@
 ---
-
+import {Brush, Music, ChefHat, Cat, Gamepad, Book} from "lucide-astro";
+import {icons} from "../../data/iconsImports.ts";
+import php from "../../assets/php-icon.png"
 ---
-<div id="about-me" class="h-screen flex flex-row justify-center items-center">
 
+<div id="about-me" class="h-screen flex flex-row justify-center items-center">
+    <div class="flex flex-row justify-center items-start gap-5 w-full">
+        <div class="w-1/3 flex gap-5 flex-col h-full">
+            <div class="border-[#B88DFF] border-2 rounded p-2 h-full">
+                <p class="text-lg pb-2">About me</p>
+
+                <p>Ambitious 21 years old, i have decided to take the path of an web/mobile app developer.
+                    I learned for the first time Python at highschool as an option. At 20 years old, i decided to work as an intern as a web developer.
+                    I made a web app with MERN stack and one year after, i have decided to take the opportunity to become an iOS developer @Wimova, my current company.</p>
+            </div>
+
+            <div class="flex flex-row gap-5 w-full">
+                <div class="border-[#B88DFF] border-2 rounded p-2 w-2/3">
+                    <p class="text-lg pb-2">Hobbies</p>
+
+                    <div class="flex flex-row justify-around">
+                        <Brush/>
+                        <Music/>
+                        <ChefHat/>
+                        <Cat/>
+                        <Gamepad/>
+                        <Book/>
+                    </div>
+                </div>
+
+                <div class="border-[#B88DFF] border-2 rounded p-2 w-1/3">
+                    <p class="text-center">2 years of experience in software engineering </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-1/3 border-[#B88DFF] border-2 rounded flex-col flex p-2 h-full">
+            <p class="text-lg pb-2">Competences</p>
+            <div class="flex flex-col">
+                <p>Languages</p>
+
+                <div class="flex flex-row justify-around py-2">
+                    <img class="h-10" src={icons.javascript.src} alt="javascript icon"/>
+                    <img class="h-10" src={icons.typescript.src} alt="typescript icon"/>
+                    <img class="h-10" src={icons.php.src} alt="php icon"/>
+                    <img class="h-10" src={icons.cSharp.src} alt="csharp icon"/>
+                    <img class="h-10" src={icons.java.src} alt="java icon"/>
+                    <img class="h-10" src={icons.swift.src} alt="swift icon"/>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <p>Framework - Libraries</p>
+
+                <div class="flex flex-row justify-around py-2">
+                    <img class="h-10" src={icons.react.src} alt="react icon"/>
+                    <img class="h-10" src={icons.swiftUi.src} alt="swiftUI icon"/>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <p>SGBD</p>
+
+                <div class="flex flex-row justify-around py-2">
+                    <img class="h-10" src={icons.mongoDB.src} alt="mongo icon"/>
+                    <img class="h-10" src={icons.mySQL.src} alt="mySQL icon"/>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <p>Tools</p>
+
+                <div class="flex flex-row justify-around py-2">
+                    <img class="h-10" src={icons.git.src} alt="git icon"/>
+                    <img class="h-10" src={icons.docker.src} alt="docker icon"/>
+                    <img class="h-10" src={icons.azureDevops.src} alt="azureDevOps icon"/>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
