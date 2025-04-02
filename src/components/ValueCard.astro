@@ -1,0 +1,25 @@
+---
+import { Flame, Sparkles, Lightbulb, type Icon as IconType } from '@lucide/astro';
+
+type ValueCardType = {
+    title: string,
+    icon: typeof IconType
+}
+
+const valuesCards: ValueCardType[] = [
+    { title: "Ambitious", icon: Flame},
+    { title: "Curious", icon: Lightbulb},
+    { title: "Creative", icon: Sparkles},
+    { title: "Simple", icon: Flame},
+]
+---
+<div class="bg-[#E2E0F4] flex flex-row w-full items-center justify-around p-5">
+    {
+        valuesCards.map((item) => (
+            <div class="flex flex-col w-3xs items-center p-5 rounded-[5px] bg-[#F9F9F9]">
+                <item.icon/>
+                <span>{item.title}</span>
+            </div>
+        ))
+    }
+</div>

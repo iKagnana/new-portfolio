@@ -1,24 +1,39 @@
 ---
-
+import {MoveDown} from "lucide-astro";
 ---
 
-<div class="h-screen flex flex-row justify-center items-center">
+<div class="h-screen flex flex-row justify-around items-center">
+    <div class="w-1/3 text-center flex flex-col items-center gap-5">
+            <p class="text-4xl typewriter">Hi!</p>
+            <p class="text-lg">I am Kagnana, iOS developer studying as a software engineer in Lyon</p>
+            <MoveDown class="animate-bounce"/>
+    </div>
     <div class="w-1/3 text-center">
-        <p class="text-4xl text-[#A45EE9]">Hi !</p>
-        <p class="text-lg">I am Kagnana, iOS developer studying as a software engineer in Lyon</p>
-
-        <div class="flex flex-row items-center justify-around pt-5">
-            <a href="">
-                <button class="bg-[#B88DFF] p-2 rounded w-36">
-                    <p>About me</p>
-                </button>
-            </a>
-
-            <a href="">
-                <button class="bg-[#B88DFF] p-2 rounded w-36">
-                    <p>My projects</p>
-                </button>
-            </a>
-        </div>
+        <img src="src/assets/portrait.jpeg"/>
     </div>
 </div>
+
+<style>
+    /* Type writer effect */
+    .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #000;
+        font-family: 'Courier New', monospace;
+        display: inline-block;
+        animation: typing 1s steps(4, end) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 4ch; }
+        }
+
+        img {
+            height: 350px;
+            width: 350px;
+            object-fit: cover;
+            object-position: left; 
+            border-radius: 10px;
+        }
+</style>
