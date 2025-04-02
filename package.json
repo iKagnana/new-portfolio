@@ -14,9 +14,10 @@
     "@fontsource/courier-prime": "^5.0.21",
     "@fontsource/roboto-mono": "^5.0.19",
     "@lucide/astro": "^0.487.0",
+    "@mui/icons-material": "^7.0.1",
     "@tailwindcss/vite": "^4.1.0",
     "astro": "^4.14.5",
-    "lucide-astro": "^0.438.0",
+    "prettier": "^3.5.3",
     "tailwindcss": "^4.1.0",
     "typescript": "^5.5.4"
   }

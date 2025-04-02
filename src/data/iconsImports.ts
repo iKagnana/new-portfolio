@@ -16,20 +16,20 @@ import cssLogo from "../assets/css-icon.png";
 import azureDevOpsLogo from "../assets/azure-devops-logo.png";
 
 export const icons = {
-    react: reactIcon,
-    javascript: jsIcon,
-    typescript: tsIcon,
-    mongoDB: mongodbIcon,
-    java: javaLogo,
-    swift: swiftLogo,
-    swiftUi: swiftUiLogo,
-    git: gitLogo,
-    docker: dockerLogo,
-    cSharp: cSharpLogo,
-    mySQL: mySQLLogo,
-    winForms: winFormsLogo,
-    php: phpLogo,
-    html: htmlLogo,
-    css: cssLogo,
-    azureDevops: azureDevOpsLogo
-}
+  react: reactIcon,
+  javascript: jsIcon,
+  typescript: tsIcon,
+  mongoDB: mongodbIcon,
+  java: javaLogo,
+  swift: swiftLogo,
+  swiftUi: swiftUiLogo,
+  git: gitLogo,
+  docker: dockerLogo,
+  cSharp: cSharpLogo,
+  mySQL: mySQLLogo,
+  winForms: winFormsLogo,
+  php: phpLogo,
+  html: htmlLogo,
+  css: cssLogo,
+  azureDevops: azureDevOpsLogo,
+};
